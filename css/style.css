@@ -1,0 +1,36 @@
+.app-container {
+  height: 100%;
+  width: 100%;
+  border: 1px orange solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  border: 1px lightblue solid;
+}
+
+.input-container {
+  height: 5em;
+  width: 15em;
+  border: 1px lightgreen solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-container {
+  border: 3px solid purple;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-poster {
+  height: 400px;
+  width: auto;
+  border: 1px solid goldenrod;
+}
