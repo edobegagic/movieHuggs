@@ -9,11 +9,24 @@
     <title>movieHuggs</title>
   </head>
   <body>
-    <div class="app-container">
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+        <li class="nav-link"><a href="#">Advanced Search</a></li>
+      </ul>
+    </nav>
+
+    <section class="app-container">
       <div class="title-container">
         <h1 class="title">movieHuggs</h1>
       </div>
-      <p>enter a movie</p>
+      <p class="text">enter a movie</p>
       <div class="input-container">
         <input id="userInput" />
       </div>
@@ -30,7 +43,9 @@
           />
         </p>
       </div>
+    </section>
 
+    <div class="hide">
       <p>enter a number</p>
       <div class="input-container">
         <input id="userInput2" />
@@ -39,33 +54,34 @@
         <button id="searchButton2" class="button">press me!</button>
       </div>
       <div id="displayContainer" class="display-container">
-            <p id="ispis">
-                    <img
-                      id="moviePoster2"
-                      class="movie-poster"
-                      src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
-                      alt="Movie Poster Id"
-                    />
-                  </p>
-    </div>
+        <p id="ispis">
+          <img
+            id="moviePoster2"
+            class="movie-poster"
+            src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
+            alt="Movie Poster Id"
+          />
+        </p>
+      </div>
 
-    <p>RANDOM GENERATOR</p>
-    <div class="input-container">
-     <p>nema Inputa. Random odabir</p>
+      <p>RANDOM GENERATOR</p>
+      <div class="input-container">
+        <p>nema Inputa. Random odabir</p>
+      </div>
+      <div class="button-container">
+        <button id="searchButton3" class="button">press me!</button>
+      </div>
+      <div id="displayContainer" class="display-container">
+        <p id="ispis">
+          <img
+            id="moviePoster3"
+            class="movie-poster"
+            src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
+            alt="Movie Poster Id"
+          />
+        </p>
+      </div>
     </div>
-    <div class="button-container">
-      <button id="searchButton3" class="button">press me!</button>
-    </div>
-    <div id="displayContainer" class="display-container">
-          <p id="ispis">
-                  <img
-                    id="moviePoster3"
-                    class="movie-poster"
-                    src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
-                    alt="Movie Poster Id"
-                  />
-                </p>
-  </div>
 
     <script src="js/index.js"></script>
   </body>
