@@ -11,15 +11,16 @@ nav {
   background: #a6deff;
   display: flex;
   flex-direction: row-reverse;
+  position: sticky;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  width: 50%;
+  width: 60%;
   height: 100%;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .nav-link {
@@ -30,10 +31,11 @@ nav {
   color: white;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
+  padding: 30px;
 }
 
 .app-container {
-  height: 100%;
+  height: 90vh;
   width: 100%;
   border: 1px orange solid;
   display: flex;
@@ -47,6 +49,7 @@ nav {
 
 .title {
   font-family: 'Indie Flower', cursive;
+  font-size: 4.5em;
 }
 
 .input-container {
@@ -63,16 +66,97 @@ nav {
   height: auto;
   width: 100%;
   display: flex;
+  flex-direction: row;
+}
+
+.movie-poster-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid green;
+}
+.movie-poster {
+  width: 15rem;
+  height: auto;
+  border-radius: 5%;
+}
+
+.description-container {
+  font-family: 'Nunito', sans-serif;
+  width: 50%;
+  height: auto;
+  border: 3px orange solid;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.movie-poster {
-  height: 400px;
-  width: auto;
-  border: 1px solid goldenrod;
-}
-
 .hide {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    top: 0; /* required for sticky; the position where it should stick in the end*/
+    position: sticky;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 20%;
+    z-index: 2;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px;
+    background: white;
+  }
+  .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background: #a6deff;
+    /*create mask ->*/
+    clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+    justify-content: center;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+  }
+  .nav-link a {
+    line-height: 10vh;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .title {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title {
+    font-size: 3em;
+  }
+  .display-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .movie-poster {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 2em;
+  }
 }

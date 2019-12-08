@@ -30,18 +30,43 @@
       <div class="input-container">
         <input id="userInput" />
       </div>
+
+      <!-- urediti dugme kao hamburger button, ne mora biti button, može biti i obični class-->
       <div class="button-container">
         <button id="searchButton" class="button">press me!</button>
       </div>
+
+      <!-- nakon klika na dugme displayContainer iz display:none u display:block ili visible ili tako nesto
+      prije toga na mjestu snoopija i na mjestu descriptiona moze stajati reklama za ovo:
+        not sure what to watch? she doesn't want to watch those stupid superhero movies, but you still want to enjoy the film
+        this search is not based on your general movie preferences, but your current situation, mood and compromise in regards to the
+        person with whom you are choosing the movie
+
+        what is the cause for the movie? want to brag later to your friends about that arty movie you watched last night, but prefer not
+        to die of boredom? dont't worry! we got you covered!
+
+        
+    -->
       <div id="displayContainer" class="display-container">
-        <p id="ispis">
+        <div class="movie-poster-container">
           <img
             id="moviePoster"
             class="movie-poster"
             src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
             alt="Movie Poster"
           />
-        </p>
+        </div>
+        <div class="description-container">
+          <h2>movie title</h2>
+          <h2>movie description</h2>
+          <h3>why this movie?</h3>
+          <p>
+            you chose the color: green, which is associated with a good mood
+          </p>
+          <p>you chose the seaside scape which is associated with calmness</p>
+          <p>the perfect movieHugg for you is this</p>
+          <h2>movie TRAILER</h2>
+        </div>
       </div>
     </section>
 
@@ -84,5 +109,6 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>
