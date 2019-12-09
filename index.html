@@ -9,6 +9,7 @@
     <title>movieHuggs</title>
   </head>
   <body>
+    <div class="outer-wraper"></div>
     <nav>
       <div class="hamburger">
         <div class="line"></div>
@@ -16,26 +17,26 @@
         <div class="line"></div>
       </div>
       <ul class="nav-links">
-        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#aboutContainer">About</a></li>
         <li class="nav-link"><a href="#">Contact</a></li>
         <li class="nav-link"><a href="#">Advanced Search</a></li>
       </ul>
     </nav>
-
     <section class="app-container">
-      <div class="title-container">
-        <h1 class="title">movieHuggs</h1>
-      </div>
-      <p class="text">enter a movie</p>
-      <div class="input-container">
-        <input id="userInput" />
-      </div>
+      <div class="upper-background">
+        <div class="title-container">
+          <h1 class="title">movieHuggs</h1>
+        </div>
+        <p class="text">enter a movie</p>
+        <div class="input-container">
+          <input id="userInput" />
+        </div>
 
-      <!-- urediti dugme kao hamburger button, ne mora biti button, može biti i obični class-->
-      <div class="button-container">
-        <button id="searchButton" class="button">press me!</button>
+        <!-- urediti dugme kao hamburger button, ne mora biti button, može biti i obični class-->
+        <div class="button-container">
+          <button id="searchButton" class="button">press me!</button>
+        </div>
       </div>
-
       <!-- nakon klika na dugme displayContainer iz display:none u display:block ili visible ili tako nesto
       prije toga na mjestu snoopija i na mjestu descriptiona moze stajati reklama za ovo:
         not sure what to watch? she doesn't want to watch those stupid superhero movies, but you still want to enjoy the film
@@ -47,6 +48,44 @@
 
         
     -->
+
+      <div class="question-container">
+        <div class="color-question">
+          <h2>pick a color</h2>
+          <div class="color-container">
+            <div class="row-container"></div>
+            <div class="red color"></div>
+            <div class="blue color"></div>
+            <div class="green color"></div>
+            <div class="purple color"></div>
+            <div class="orange color"></div>
+          </div>
+          <a
+            href="http://theconversation.com/we-can-use-colour-to-communicate-how-we-feel-heres-how-90157"
+            >find out more about color psychology</a
+          >
+        </div>
+        <div class="mood-question">
+          <h2>what are you in the mood for</h2>
+          <h3>something funny</h3>
+          <p>gentle</p>
+          <p>rollercoster</p>
+          <p>suspense</p>
+          <p>visual candy</p>
+          <p>hungry for art</p>
+          <a href="#">find out more about mood</a>
+        </div>
+        <div class="cause-question">
+          <h2>what is your lightmotive?</h2>
+          <p></p>
+          <a
+            href="https://dictionary.cambridge.org/us/dictionary/english/a-means-to-an-end"
+            >find out more about a means to an end</a
+          >
+        </div>
+        <!-- get high, to brag to friends, to have a laugh, ...-->
+        <!-- pop up - display adult? -->
+      </div>
       <div id="displayContainer" class="display-container">
         <div class="movie-poster-container">
           <img
@@ -68,6 +107,11 @@
           <h2>movie TRAILER</h2>
         </div>
       </div>
+    </section>
+
+    <!-- 2nd content-->
+    <section class="about-container" id="aboutContainer">
+      <h1 class="title">this is the about part</h1>
     </section>
 
     <div class="hide">

@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background: rgb(34, 28, 28);
+}
+
 nav {
   height: 10vh;
-  background: #a6deff;
+  background: rgb(34, 28, 28);
   display: flex;
   flex-direction: row-reverse;
   position: sticky;
+  top: 0;
+  right: 0;
 }
 
 .nav-links {
@@ -35,12 +43,28 @@ nav {
 }
 
 .app-container {
-  height: 90vh;
-  width: 100%;
+  height: auto;
+  width: 100vw;
   border: 1px orange solid;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.about-container {
+  height: 100%;
+  width: 100vw;
+  border: 1px green solid;
+}
+
+.upper-background {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
 }
 
 .title-container {
@@ -48,8 +72,13 @@ nav {
 }
 
 .title {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-size: 4.5em;
+  color: white;
+}
+
+.text {
+  color: white;
 }
 
 .input-container {
@@ -61,12 +90,83 @@ nav {
   align-items: center;
 }
 
+.question-container {
+  border: 3px solid blue;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 5vh;
+}
+
+.color-question {
+  border: 2px dotted gray;
+  height: 100%;
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-container {
+  height: 30em;
+  width: 15em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15%;
+  overflow: hidden;
+}
+
+.color {
+  height: 100%;
+  width: 90%;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  margin: 5px;
+}
+
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+}
+.purple {
+  background: purple;
+}
+.orange {
+  background: orange;
+}
+
+.mood-question {
+  border: 2px dotted gray;
+  height: 100%;
+  width: 33vw;
+}
+
+.cause-question {
+  border: 2px dotted gray;
+  height: 100%;
+  width: 33vw;
+}
+
 .display-container {
   border: 3px solid purple;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .movie-poster-container {
@@ -91,6 +191,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 .hide {
@@ -120,17 +221,40 @@ nav {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    background: #a6deff;
+    background: rgb(114, 60, 60);
     /*create mask ->*/
-    clip-path: circle(50px at 90% -10%);
+    clip-path: circle(50px at 90% -30%);
     transition: all 1s ease-out;
     justify-content: center;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1100px at 90% -30%);
   }
   .nav-link a {
     line-height: 10vh;
+  }
+
+  .app-container {
+    width: 100%;
+  }
+  .about-container {
+    width: 100%;
+  }
+  .question-container {
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    border: 3px solid black;
+    align-items: center;
+  }
+  .color-container {
+    height: 50vh;
+  }
+  .color-question,
+  .mood-question,
+  .cause-question {
+    width: 100%;
+    height: auto;
   }
 }
 
