@@ -2,24 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: rgb(34, 28, 28);
+  overflow: hidden;
 }
 
 nav {
-  height: 10vh;
+  height: 5vh;
   background: rgb(34, 28, 28);
   display: flex;
   flex-direction: row-reverse;
   position: sticky;
   top: 0;
   right: 0;
+  padding-bottom: 30px;
 }
 
 .nav-links {
@@ -42,20 +39,58 @@ nav {
   padding: 30px;
 }
 
+.hide {
+  display: none;
+}
+
+/* zamjeniti za druge klase wrapper i outer-wrapper za mobitel*/
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  overflow: hidden;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.one {
+  background: #efdefe;
+}
+.two {
+  background: #a3f3d3;
+}
+.three {
+  background: #0bbaa0;
+}
+.four {
+  background: #00dfdf;
+}
+
 .app-container {
-  height: 87vh;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
   border: 1px solid orange;
-}
-.about-container {
-  height: 87vh;
-  width: 100vw;
-  border: 1px green solid;
 }
 
 .upper-background {
@@ -73,8 +108,9 @@ nav {
 
 .title {
   font-family: 'Quicksand', sans-serif;
-  font-size: 4.5em;
+  font-size: 4em;
   color: white;
+  line-height: 0.5;
 }
 
 .text {
@@ -97,7 +133,7 @@ nav {
   display: flex;
   flex-direction: row;
   font-family: 'Nunito', sans-serif;
-  margin-top: 5vh;
+  margin-top: 5em;
 }
 
 .color-question {
@@ -157,45 +193,6 @@ nav {
   border: 2px dotted gray;
   height: 100%;
   width: 33vw;
-}
-
-.display-container {
-  border: 3px solid purple;
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.movie-poster-container {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid green;
-}
-.movie-poster {
-  width: 15rem;
-  height: auto;
-  border-radius: 5%;
-}
-
-.description-container {
-  font-family: 'Nunito', sans-serif;
-  width: 50%;
-  height: auto;
-  border: 3px orange solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-.hide {
-  display: none;
 }
 
 @media only screen and (max-width: 768px) {

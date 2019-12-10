@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#aboutContainer">About</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
+        <li class="nav-link"><a href="#">Advanced Search</a></li>
+      </ul>
+    </nav>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one">
+          <section class="app-container">
+            <div class="upper-background">
+              <div class="title-container">
+                <h1 class="title">movieHuggs</h1>
+                <a href="#aboutContainer">About</a>
+              </div>
+              <p class="text">enter a movie</p>
+              <div class="input-container">
+                <input id="userInput" />
+              </div>
+
+              <!-- urediti dugme kao hamburger button, ne mora biti button, može biti i obični class-->
+              <div class="button-container">
+                <button id="searchButton" class="button">press me!</button>
+              </div>
+            </div>
+            <!-- nakon klika na dugme displayContainer iz display:none u display:block ili visible ili tako nesto
+                    prije toga na mjestu snoopija i na mjestu descriptiona moze stajati reklama za ovo:
+                      not sure what to watch? she doesn't want to watch those stupid superhero movies, but you still want to enjoy the film
+                      this search is not based on your general movie preferences, but your current situation, mood and compromise in regards to the
+                      person with whom you are choosing the movie
+              
+                      what is the cause for the movie? want to brag later to your friends about that arty movie you watched last night, but prefer not
+                      to die of boredom? dont't worry! we got you covered!
+              
+                      
+                  -->
+
+            <div class="question-container">
+              <div class="color-question">
+                <h2>pick a color</h2>
+                <div class="color-container">
+                  <div class="row-container"></div>
+                  <div class="red color"></div>
+                  <div class="blue color"></div>
+                  <div class="green color"></div>
+                  <div class="purple color"></div>
+                  <div class="orange color"></div>
+                </div>
+                <a
+                  href="http://theconversation.com/we-can-use-colour-to-communicate-how-we-feel-heres-how-90157"
+                  >find out more about color psychology</a
+                >
+              </div>
+              <div class="mood-question">
+                <h2>what are you in the mood for</h2>
+                <h3>something funny</h3>
+                <p>gentle</p>
+                <p>rollercoster</p>
+                <p>suspense</p>
+                <p>visual candy</p>
+                <p>hungry for art</p>
+                <a href="#">find out more about mood</a>
+              </div>
+              <div class="cause-question">
+                <h2>what is your lightmotive?</h2>
+                <p></p>
+                <a
+                  href="https://dictionary.cambridge.org/us/dictionary/english/a-means-to-an-end"
+                  >find out more about a means to an end</a
+                >
+              </div>
+              <!-- get high, to brag to friends, to have a laugh, ...-->
+              <!-- pop up - display adult? -->
+            </div>
+          </section>
+        </div>
+        <div class="slide two">
+          <section class="about-container" id="aboutContainer">
+            <h1 class="title">this is the about part</h1>
+          </section>
+        </div>
+        <div class="slide three"></div>
+        <div class="slide four"></div>
+      </div>
+    </div>
+  </body>
+</html>
